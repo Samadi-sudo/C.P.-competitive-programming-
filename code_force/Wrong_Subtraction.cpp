@@ -1,0 +1,19 @@
+//https://codeforces.com/problemset/problem/977/A
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    int m;
+    cin >> n >> m;
+    for (int i = 0; i < m; i++)
+    {
+        if (n % 10 != 0)
+            n--;
+        else
+            n /= 10;
+    }
+    cout << n;
+}
